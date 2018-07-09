@@ -1,0 +1,29 @@
+
+<view class="page">
+	
+	<view class="content-body">
+		<view class="title-body clearfix">
+			<image src="/static/images/dist_03.png" class="icon-img"/>
+			<text class="title">点击上传验证人照片</text>
+		</view>
+		<view class="img-body">
+			<image src="{{imgPath}}" class="img" bindtap="uploadImg" mode="aspectFit"/>
+		</view>
+	</view>
+
+	<view class="content-body">
+		<view class="title-body clearfix">
+			<image src="/static/images/dist_03.png" class="icon-img" />
+			<text class="title">点击上传验证人视频</text>
+		</view>
+		<view class="img-body">
+			<image src="/static/images/dist_01.png" wx:if="{{isVideo}}" mode="aspectFit" class="img" bindtap="uploadVideo"/>
+			<video id="myVideo" src="{{videoPath}}" wx:else class="img"></video>
+		</view>
+	</view>
+
+	<!--<view class="button-body">
+      <button class="{{isDisabled?'button':'active'}}" disabled="{{isDisabled}}" bindtap="onSubmitData" >提交</button>
+   </view>-->
+		
+</view>

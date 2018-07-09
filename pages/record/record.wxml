@@ -1,0 +1,18 @@
+
+
+<view class="page">
+  
+
+<!--历史记录-->
+ 
+ <view class="authLog-item">
+      <view class="item" wx:for="{{recordList}}"  wx:key="recordList" id="{{item.id}}" wx:if="{{recordList.length}}" bindtap="getRecordInfo">
+        <text class="content">{{item.registerTime}}</text>
+      </view>
+      <view class="none_data_body" style="top:200px;" wx:if="{{!recordList.length}}">
+	      <image src="/static/images/none_data.png" class="img"/>
+	      <text class="text">暂无信息，赶紧去抢沙发吧~</text>
+	  </view>
+</view>
+   
+</view>

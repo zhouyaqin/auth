@@ -1,0 +1,311 @@
+
+.pages{
+    position: relative;
+}
+
+.touch_content{
+  padding: 15px 12px;
+  background: #ffffff;
+}
+
+
+.cont-items{
+   position: relative;
+   width: 100%;
+}
+
+.cont-items .cont-title{
+   padding: 10px 15px;
+   font-size: 14px;
+}
+
+.cont-items .cont-title .datetime{
+   color: #363638;
+}
+
+.cont-items .cont-title .money{
+  color: #bfc8cd;
+}
+
+.itembox{
+  margin-bottom: 12rpx;
+}
+
+.title{
+   width: 100px;
+   height: 120px;
+   margin-right: 10px;
+}
+
+.title image{
+   width: 100%;
+   height: 100%;
+}
+
+.message {
+  position: relative
+}
+.message-reslut{
+  position: absolute;
+  right: 22rpx;
+  top: 17rpx;
+  font-size: 28rpx;
+}
+.message .user span{
+  color: #1673d1;
+  font-size: 32rpx;
+  margin-right: 8px;
+}
+
+.message .maes{
+  color: #c0c5d4;
+  font-size: 12px;
+  margin: 10rpx 0;
+  overflow: hidden;
+}
+
+.message .maes .name{
+  color: #76b042;
+}
+
+
+.message .maes em{
+  font-style: normal;
+  display: block;
+  overflow: hidden;
+  color: #c0c5d4;
+  font-size: 12px;
+}
+.message .maes.masspacl image{
+  display: block;
+  float: left;
+}
+.message .maes image{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: -9rpx;
+  margin-right: 10rpx;
+}
+
+.maes-fot{
+  font-size: 22rpx;
+  color:#c0c5d4;
+  margin-top: 5px;
+}
+.maes-fot span{
+   color: #76b042;
+}
+
+.search-cont{
+  position: relative;
+  width: 100%;
+  height: 24px;
+  padding: 8px 45px 8px 0;
+  background: #e6e7eb;
+  border-radius: 5px;
+}
+
+.search-cont input{
+  padding: 0 10px;
+  height: 24px;
+  display: block;
+  border-right: 1px solid #76b042;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.search-cont image{
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.weui-cells{
+  margin-bottom: 5rpx;
+}
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid #eee;
+  box-shadow:2px 4px 8px #000000;
+  z-index: 100;
+  background: #eeeeee;
+
+}
+.foot-mas{
+  width: 50%;
+  float: left;
+  /*line-height: 100rpx;*/
+  height: 100rpx;
+  text-align: center;
+}
+
+.foot-mas .img{
+  width: 100%;
+  height: 100%;
+}
+
+.foot-mas.bg{
+  background: #ffffff;
+}
+.foot-mas .foot-text{
+  color:#1673d1;
+  font-size:32rpx;
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: 26rpx;
+
+
+}
+.foot-mas .foot-text.color{
+  color: #f2bd4d;
+}
+.content-body{
+  padding: 30px 30px;
+  background: #FFF;
+}
+.content{
+    margin: 0 auto;
+    width: 180px;
+    background: rgba(205, 208, 216, 0.5);
+}
+
+.content .image{
+    width: 100%;
+}
+
+
+.button-body{
+   margin: 30px 20px 0 20px;
+}
+
+.button-body .button{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 45px;
+    background: #dadde3;
+}
+
+.button-body .active{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 42px;
+    background: #76b042;
+}
+.noMessage{
+  font-size: 30rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+
+.color1{
+  color: #7fbf23;
+}
+.color2{
+  color: #f19a27;
+}
+
+.color3{
+  color: #e71f22;
+}
+
+
+.feedback{
+  padding: 30rpx 0;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+
+.add-news_btn{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 45px;
+  border: 1px solid #76b042;
+  color: #76b042;
+  background: #f2f3f5;
+}
+
+
+
+.weui-cell::after,
+.weui-cells::after{
+  border-bottom:1rpx solid #f1f2f6
+}
+
+.weui-cell::before,
+.weui-cells::before{
+  border: none;
+}
+
+.weui-cell__hd .icon-css{
+  margin-right: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.bc_1{
+   background: #f27271;
+}
+
+.bc_2{
+   background: #a4d869;
+}
+
+
+.weui-cell__bd{
+  padding-left: 5px;
+  font-size: 14px;
+  color: #363638;
+}
+
+.weui-cell__ft{
+  width: 100px;
+}
+
+.weui-cell__ft .text{
+  font-size: 24px;
+  color: #000;
+}
+
+.weui-cell__bd_text{
+  font-size: 12px;
+  color: #b1b4bd;
+  line-height: 21px;
+  width: 220px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cont-code{
+   display: inline-block;
+   font-size: 12px;
+   color: #c1c8ce;
+}
+
+
+.touch_content_1{
+   position: relative;
+}
+
+.cont-body_1{
+   position: relative;
+   background: #ffffff;
+   min-height: 200px;
+}

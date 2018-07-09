@@ -1,0 +1,69 @@
+<import src="../../template/template.wxml"/>
+
+<view class="page">
+
+  <swiper
+    autoplay="true" style="height: 160px; padding: 8px 0;">
+    <block wx:for="{{banner}}" wx:key="banner">
+      <navigator url="{{item.action}}" hover-class="weui-cell_active">
+        <swiper-item>
+          <image src="{{item.image}}" id="{{index}}" class="slide-image" height="160"/>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+
+
+  <view style="position: relative; width: 100%; height: 208px;">
+    <swiper class="b_white" style="height: 185px; padding-top: 15px;">
+        <block wx:for="{{classifyGroup}}" wx:key="classifyGroup"  wx:if="{{classifyGroup.length}}"   wx:for-item="list">
+        <swiper-item>
+            <view class="classify_body">
+                <view class="item" wx:for="{{list.classifyList}}" wx:key="classify">
+                  <navigator url="/pages/temp/temp?categoryId={{item.id}}&categoryName={{item.name}}" hover-class="weui-cell_active">
+                      <image src="{{item.icon}}" class="img"/>
+                      <text class="text">{{item.name}}</text>
+                  </navigator>
+                </view>
+
+                <view class="item">
+                  <navigator url="/pages/feedback/feedback" hover-class="weui-cell_active">
+                      <image src="/static/images/icon/14.png" class="img"/>
+                      <text class="text">意见反馈</text>
+                  </navigator>
+                </view>
+
+                <view class="item">
+                  <navigator url="/pages/idauth/idauth" hover-class="weui-cell_active">
+                      <image src="/static/images/icon/13.png" class="img"/>
+                      <text class="text">身份认证</text>
+                  </navigator>
+                </view>
+            </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="none_data_body" wx:if="{{!classifyGroup.length}}" style="top:30px;">
+        <image src="/static/images/none_data.png" class="img"/>
+        <text class="text">暂无信息，赶紧去抢沙发吧~</text>
+    </view>
+  </view>
+
+
+  <view class="news-container">
+      <view class="news-body">
+        <view class="news-title">最新消息</view>
+      </view>
+      <view class="news-content">
+          <block wx:for="{{dataList}}" wx:key="data" wx:if="{{dataList.length}}">
+             <template is="newsList" data="{{item: item, windowWidth: windowWidth}}"></template>
+          </block>
+          <view class="none_data_body" style="top:50px;" wx:if="{{!dataList.length}}">
+              <image src="/static/images/none_data.png" class="img"/>
+              <text class="text">暂无信息，赶紧去抢沙发吧~</text>
+          </view>
+      </view>
+  </view>
+
+
+</view>

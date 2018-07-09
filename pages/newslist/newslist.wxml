@@ -1,0 +1,19 @@
+<import src="../../template/template.wxml"/>
+
+<view class="page">
+ 
+    <view class="news-message">
+        <block wx:for="{{messageList}}" wx:key="data" wx:if="{{messageList.length}}">
+          <template is="messageDetailList" data="{{item: item}}"></template>
+        </block>
+        <view class="none_data_body" style="top:50%; margin-top: -75px;" wx:if="{{!messageList.length}}">
+          <image src="/static/images/none_data.png" class="img"/>
+          <text class="text">暂无信息，赶紧去抢沙发吧~</text>
+        </view>
+    </view>
+
+    <block wx:if="{{isUseTemp}}">
+      <template is="noticeTemp" data="{{item: noticeDetail, windowHeight: windowHeight}}"></template>
+    </block>
+
+</view>

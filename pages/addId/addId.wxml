@@ -1,0 +1,79 @@
+
+
+
+<view class="page">
+
+<view class="box1">
+
+    <view class="id_title">申请人信息登记</view>
+
+
+    <view class="identity-ct clearfix" >
+       <view class="content f-l">
+          <image src="{{imgPath1}}" data-id="1" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass1}}" class="errorMass"  data-id="1"  bindtap="uploadImg">{{errorMassCent1}}</view>
+          <image hidden="{{!errorMassimg1}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+
+       <view class="content f-r">
+          <image src="{{imgPath2}}"  data-id="2" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass2}}" class="errorMass"  data-id="2"  bindtap="uploadImg">{{errorMassCent2}}</view>
+           <image hidden="{{!errorMassimg2}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+       <view class="content f-l">
+          <image src="{{imgPath3}}"  data-id="3" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass3}}" class="errorMass"  data-id="3"  bindtap="uploadImg">{{errorMassCent3}}</view>
+           <image hidden="{{!errorMassimg3}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+       <view class="content f-r">
+          <image src="{{imgPath4}}"  data-id="4" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass4}}" class="errorMass"  data-id="4"  bindtap="uploadImg">{{errorMassCent4}}</view>
+          <image hidden="{{!errorMassimg4}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+       <view class="content f-l">
+          <image src="{{imgPath5}}" data-id="5" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass5}}" class="errorMass"  data-id="5"  bindtap="uploadImg">{{errorMassCent5}}</view>
+           <image hidden="{{!errorMassimg5}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+       <view class="content f-r">
+          <image src="{{imgPath6}}" data-id="6" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass6}}" class="errorMass"  data-id="6"  bindtap="uploadImg">{{errorMassCent6}}</view>
+           <image hidden="{{!errorMassimg6}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+      <view class="content f-l">
+          <image src="{{imgPath11}}" data-id="11" class="image" bindtap="uploadImg" />
+          <view wx:if="{{errorMass11}}" class="errorMass"  data-id="11"  bindtap="uploadImg">{{errorMassCent11}}</view>
+           <image hidden="{{!errorMassimg11}}" class="successimg"  src="/static/images/secuues.png"></image>
+      </view>
+
+    </view>
+
+</view>
+
+<view class="box1">
+    <view class="id_title">申请人脸部照片</view>
+
+    <view class="identity-ct" style="height:254rpx;">
+         <view class="content f-l">
+            <image src="{{imgPath9}}" data-id="9" class="image" bindtap="uploadImg" />
+            <view wx:if="{{errorMass9}}" class="errorMass"  data-id="9"  bindtap="uploadImg">{{errorMassCent9}}</view>
+             <image hidden="{{!errorMassimg9}}" class="successimg"  src="/static/images/secuues.png"></image>
+        </view>
+
+         <view class="content f-r">
+            <image src="{{imgPath10}}" data-id="10" class="image" bindtap="uploadImg" />
+            <view wx:if="{{errorMass10}}" class="errorMass"  data-id="10"  bindtap="uploadImg">{{errorMassCent10}}</view>
+             <image hidden="{{!errorMassimg10}}" class="successimg"  src="/static/images/secuues.png"></image>
+        </view>
+    </view>
+</view>
+
+<button bindtap="onSubmitMass" class="SubmitMass">下一步</button>
+
+</view>

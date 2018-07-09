@@ -1,0 +1,35 @@
+<import src="../../template/template.wxml"/>
+
+<view class="page">
+
+        <view class="identity-content">
+          
+          <view class="touch_content clearfix mt-5" catchtap="onShowRecord">
+              <view class="f-l title" >
+                  <image src="{{remindDetail.headImage}}" mode="aspectFill" class="img"/>
+              </view>
+              <view class="f-l message" style="width:{{windowWidth-140}}px;">
+                  <view class="user maes">
+                      <span class="name">{{remindDetail.name}}</span>（{{remindDetail.juweihui}}）
+                  </view>
+                  <view class="maes">
+                    <image src="/static/images/face_10.png" class="img"/>{{remindDetail.idNumber}}
+                  </view>
+                  <view class="maes">
+                      <image src="/static/images/face_11.png" class="img"/>{{remindDetail.registerTime}}
+                  </view>
+                  <view class="maes masspacl">
+                      <image src="/static/images/face_12.png" class="img"/><em>{{remindDetail.location || ''}}</em>
+                  </view>
+              </view>
+          </view>
+
+          <view class="touch_content_1">
+
+             <block wx:for="{{statisticsList}}" wx:key="statisticsList">
+               <template is="statisticsList" data="{{data: item}}"></template>
+             </block>
+          </view>
+
+        </view>
+</view>

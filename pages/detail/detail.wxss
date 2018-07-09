@@ -1,0 +1,69 @@
+@import "../../libs/wxParse/wxParse.wxss";
+
+
+.infoDetail{
+  padding: 34rpx 50rpx 0;
+  padding-bottom: 28rpx;
+  background: #ffffff;
+}
+.infoDetail .title{
+  font-size: 36rpx;
+  line-height:48rpx;
+  font-weight: bold;
+}
+.infoDetail .content{
+  color: #7f8f99;
+  margin-top: 21rpx;
+ 
+}
+.infoDetail .listData{
+  font-size: 12px;
+}
+.infoDetail .listRt image{
+  width: 18px;
+  height: 18px;
+  display: block;
+  float: left;
+  vertical-align: 2px;
+  margin-right: 3px;
+}
+.infoDetail .listRt{
+  font-size: 12px;
+  width:89rpx;
+  height:17px;
+}
+.infoDetail .listRt.lok{
+  width: auto;
+  float: right;
+}
+.infoDetail .listRt text{
+  display: block;
+  float: left;
+  margin-right: 30rpx;
+}
+
+.newContent{
+   overflow: hidden;
+   position: relative;
+   background: #ffffff;
+}
+
+.newContent .infoCt{
+   margin: 0px 20px 40px 20px;
+   font-size: 14px;
+}
+
+.newContent .infoCt image{
+   overflow: hidden;
+   width: 100% !important;
+}
+
+.summary{
+   margin: 0px 20px 20px 20px;
+   padding: 10px;
+   background: #f2f2f2;
+   border-radius: 10rpx;
+   line-height: 42rpx;
+   font-size: 14px;
+   color: #999;
+}

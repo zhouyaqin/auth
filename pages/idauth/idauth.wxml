@@ -1,0 +1,19 @@
+
+<view class="page">
+
+    <view class="content-body"> 
+        <view class="content">
+            <image src="{{imgPath}}" class="image" bindtap="uploadImg" />
+        </view>
+    </view>
+    <view class="button-body">
+        <button class="{{isDisabled?'button':'active'}}" disabled="{{isDisabled}}" bindtap="uploadImgBtn" >开始认证</button>
+        <navigator url="/pages/addId/addId" hover-class="weui-cell_active">
+          <button class="add-news_btn">新添认证</button>
+        </navigator>
+        <navigator url="/pages/distfeedback/distfeedback" hover-class="weui-cell_active">
+          <view class="feedback">认证不通过？点击反馈</view>
+        </navigator>
+    </view>
+        
+</view>

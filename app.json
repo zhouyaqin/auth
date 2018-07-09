@@ -1,0 +1,56 @@
+{
+  "debug": true,
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fffefc",
+    "navigationBarTitleText": "惠民服务云",
+    "backgroundColor": "#fffefc",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/iddetail/iddetail",
+    "pages/identity/identity",
+    "pages/record/record",
+    "pages/authInfo/authInfo",
+    "pages/family/family",
+    "pages/newslist/newslist",
+    "pages/idauth/idauth",
+    "pages/distfeedback/distfeedback",
+    "pages/addId/addId",
+    "pages/temp/temp",
+    "pages/news/news",
+    "pages/phone/phone",
+    "pages/uphone/uphone",
+    "pages/feedback/feedback"
+  ],
+  "networkTimeout": {
+  },
+  "tabBar": {
+    "color": "#969b9f",
+    "selectedColor": "#76a942",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "static/images/icon/1_1.png",
+        "selectedIconPath": "static/images/icon/1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/images/icon/2.png",
+        "selectedIconPath": "static/images/icon/4.png",
+        "pagePath": "pages/news/news",
+        "text": "消息"
+      },
+      {
+        "iconPath": "static/images/icon/3.png",
+        "selectedIconPath": "static/images/icon/5.png",
+        "pagePath": "pages/identity/identity",
+        "text": "我的"
+      }
+    ]
+  }
+}

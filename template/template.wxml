@@ -1,0 +1,87 @@
+
+<template name="newsList">
+   <view class="news-content__body clearfix">
+      <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="weui-cell_active">
+        <view class="content-left f-l" style="width: {{windowWidth-120}}px;">
+            <view class="title">{{item.title||''}}</view>
+            <view class="datetime">{{item.createDate||''}}</view>
+            <view class="content">{{item.summary||''}}</view>
+        </view>
+        <view class="content-right f-r">
+           <image src="{{item.imgPath||''}}" class="img"/>
+        </view>
+      </navigator>
+  </view>
+</template>
+
+<template name="messageList">
+    <navigator url="/pages/newslist/newslist?type={{item.type}}" hover-class="weui-cell_active">
+      <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+              <view class="weui-cell__hd">
+                  <image src="{{item.icon||''}}" class="img"></image>
+              </view>
+              <view class="weui-cell__bd">
+                <view>{{item.title||''}}</view>
+                <view class="weui-cell__bd_text">{{item.content||''}}</view>
+              </view>
+              <view class="weui-cell__ft"><text class="text">{{item.createTime||''}}</text></view>
+          </view>
+      </view>
+    </navigator>
+</template>
+
+<template name="messageDetailList">
+    <view class="weui-cells weui-cells_after-title" catchtap="onMassgeDetail" id="{{item.content}},{{item.createTime}}">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="{{item.icon||''}}" class="img"></image>
+            </view>
+            <view class="weui-cell__bd">
+              <view>{{item.title||''}}</view>
+              <view class="weui-cell__bd_text">{{item.content||''}}</view>
+            </view>
+            <view class="weui-cell__ft"><text class="text">{{item.createTime||''}}</text></view>
+        </view>
+    </view>
+</template>
+
+
+<template name="statisticsList">
+    <view class="cont-items">
+        <view class="cont-title clearfix">
+            <text class="f-l datetime">{{data.quarter||''}}</text>
+            <text class="f-r money">已领取补贴总额： {{data.totalAmount||0}}元</text>
+        </view>
+        <view class="cont-body_1">
+            <view class="weui-cells weui-cells_after-title" wx:for="{{data.list}}" wx:key="list">
+              <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__hd">
+                     <view class="icon-css bc_2">林业</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                    <view><text style="padding-right: 8px;">{{item.guaranteeType||''}}</text><text class="cont-code">({{item.familyCode||''}})</text></view>
+                    <view class="weui-cell__bd_text">{{item.date||''}}</view>
+                    <view class="weui-cell__bd_text" wx:if="{{item.mark!=''}}">备注：{{item.mark||''}}</view>
+                  </view>
+                  <view class="weui-cell__ft"><text class="text">+{{item.amount||0}}</text></view>
+              </view>
+            </view>
+            <view class="none_data_body" style="top:50px;" wx:if="{{!data.list.length}}">
+                <image src="/static/images/none_data.png" class="img"/>
+                <text class="text">暂无信息，赶紧去抢沙发吧~</text>
+            </view>
+        </view>
+    </view>
+</template>
+
+
+<template name="noticeTemp">
+  <view class="mask-container" style="height:{{windowHeight}}px;" bindtap="closeNoticeTemp">
+        <view class="mask-body">
+            <view class="title">{{item.title}}</view>
+            <view class="content">{{item.content}}</view>
+            <view class="datetime">{{item.createTime}}</view>
+        </view>
+    </view>
+</template>

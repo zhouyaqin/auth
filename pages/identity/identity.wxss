@@ -1,0 +1,284 @@
+
+.pages{
+    position: relative;
+}
+
+.identity-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itembox{
+  margin-bottom: 12rpx;
+}
+
+.touch-item .title{
+   width: 100px;
+   height: 150px;
+   margin-right: 10px;
+}
+
+.touch-item .title image{
+   width: 100%;
+   height: 100%;
+}
+
+.touch-item .message {
+  position: relative
+}
+.message-reslut{
+  position: absolute;
+  right: 22rpx;
+  top: 17rpx;
+  font-size: 28rpx;
+}
+.message .user span{
+  color: #1673d1;
+  font-size: 32rpx;
+  margin-right: 8px;
+}
+
+.message .maes{
+  color: #c0c5d4;
+  font-size: 28rpx;
+  margin: 10rpx 0;
+  overflow: hidden;
+}
+
+.message .maes .name{
+  color: #76b042;
+}
+
+
+.message .maes em{
+  font-style: normal;
+  display: block;
+  overflow: hidden;
+  color: #c0c5d4;
+  font-size: 26rpx;
+
+}
+.message .maes.masspacl image{
+  display: block;
+  float: left;
+}
+.message .maes image{
+  display: inline-block;
+  width: 40rpx;
+  height:40rpx;
+  vertical-align: -9rpx;
+  margin-right: 10rpx;
+}
+
+.maes-fot{
+  font-size: 22rpx;
+  color:#c0c5d4;
+  margin-top: 5px;
+}
+.maes-fot span{
+   color: #76b042;
+}
+
+.search-cont{
+  position: relative;
+  width: 100%;
+  height: 24px;
+  padding: 8px 45px 8px 0;
+  background: #e6e7eb;
+  border-radius: 5px;
+}
+
+.search-cont input{
+  padding: 0 10px;
+  height: 24px;
+  display: block;
+  border-right: 1px solid #76b042;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.search-cont image{
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.weui-cells, .weui-cellss{
+  margin-bottom: 10rpx;
+}
+
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  border-top: 1px solid #eee;
+  box-shadow:2px 4px 8px #000000;
+  z-index: 100;
+  background: #eeeeee;
+
+}
+.foot-mas{
+  width: 50%;
+  float: left;
+  /*line-height: 100rpx;*/
+  height: 100rpx;
+  text-align: center;
+}
+
+.foot-mas .img{
+  width: 100%;
+  height: 100%;
+}
+
+.foot-mas.bg{
+  background: #ffffff;
+}
+.foot-mas .foot-text{
+  color:#1673d1;
+  font-size:32rpx;
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: 26rpx;
+
+
+}
+.foot-mas .foot-text.color{
+  color: #f2bd4d;
+}
+.content-body{
+  padding: 30px 30px;
+  background: #FFF;
+}
+.content{
+    margin: 0 auto;
+    width: 180px;
+    background: rgba(205, 208, 216, 0.5);
+}
+
+.content .image{
+    width: 100%;
+}
+
+
+.button-body{
+   margin: 30px 20px 0 20px;
+}
+
+.button-body .button{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 45px;
+    background: #dadde3;
+}
+
+.button-body .active{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 42px;
+    background: #76b042;
+}
+.noMessage{
+  font-size: 30rpx;
+  text-align: center;
+  margin: 30rpx 0;
+}
+
+.color1{
+  color: #7fbf23;
+}
+.color2{
+  color: #f19a27;
+}
+
+.color3{
+  color: #e71f22;
+}
+
+
+.feedback{
+  padding: 30rpx 0;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+
+.add-news_btn{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 45px;
+  border: 1px solid #76b042;
+  color: #76b042;
+  background: #f2f3f5;
+}
+
+
+
+
+.touch-item{
+   font-size: 14px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom:1px solid #f1f2f4;
+   width: 100%;
+   background: #ffffff;
+   border-bottom: 1px solid #eee;
+   overflow: hidden
+}
+
+.touch_content {
+   width: 100%;
+   padding: 10px 0;
+   line-height: 22px;
+   margin-right:0;
+   -webkit-transition: all 0.4s;
+   transition: all 0.4s;
+   -webkit-transform: translateX(120px);
+   transform: translateX(120px);
+   margin-left: -120px
+}
+
+.del {
+   background-color: #e64340;
+   width: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   -webkit-transform: translateX(120px);
+   transform: translateX(120px);
+   -webkit-transition: all 0.4s;
+   transition: all 0.4s;
+}
+
+.edit{
+   background-color: #7fbf23;
+   width: 60px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   -webkit-transform: translateX(120px);
+   transform: translateX(120px);
+   -webkit-transition: all 0.4s;
+   transition: all 0.4s;
+}
+
+.touch-move-active .touch_content,
+.touch-move-active .del,
+.touch-move-active .edit {
+   -webkit-transform: translateX(0);
+   transform: translateX(0);
+}
+
+

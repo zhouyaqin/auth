@@ -1,0 +1,21 @@
+
+<import src="../../libs/wxParse/wxParse.wxml"/> 
+
+<view class="page">
+  <view class="infoDetail">
+      <text class="title">{{datail.title}}</text>
+      <view class="content clearfix">
+        <text class="listData f-l">{{datail.createDate}}</text>
+        <view class="listRt lok"><image src="/static/images/look.png"></image><text>{{datail.browseNum}}</text></view>
+      </view>
+  </view>
+
+  <view class="newContent">
+    <view class="summary" wx:if="{{ datail.summary == '' ? false : true }}">{{ datail.summary }}</view>
+    <view class="infoCt">
+      <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+    </view>
+    
+  </view>
+
+</view>
